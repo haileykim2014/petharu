@@ -62,6 +62,7 @@ ul,ol{
     background-color: white;
     overflow: hidden;
     display: flex;
+    z-index: 999;
 }
 
 #root>#footer{
@@ -286,9 +287,9 @@ ul,ol{
         height: 22.5rem;
     }
     .img-box img:hover {
-        transform: scale(1.12);
-        transition: transform .35s;
-        
+        transform: scale(1.15);
+        transition: .4s ease;
+
     }
     .img-box {
         width: 100%;
@@ -339,16 +340,16 @@ ul,ol{
     .button {
         display: inline-block;
     
-        border: 2px solid #ffa726;
-        border-radius: 15px;
-        color: #ffa726;
-        padding: 5px 40px;
+        border: 2px solid orange;
+        border-radius: 10px;
+        color: orange;
+        padding: 5px 30px;
         text-decoration: none;
         transition: background-color 200ms ease-in-out;
     
       }
       .button:hover, .button:focus{
-        background-color: #ffa726;
+        background-color: orange;
         color: white;
       }
       .big{
