@@ -96,7 +96,6 @@ ul,ol{
     grid-area: main;
     padding: 20PX;
     margin: 10px;
-    height: auto;
     
 }
 
@@ -239,124 +238,66 @@ ul,ol{
     line-height: 200%;
     margin-right: 10px;
 }
-#content{
-    position: relative;
-    height: auto;
-}
+
 .mypet-section{
-    height: auto;
-}
-
-.container{
-    position: relative;
-    top: 10px;
-    height: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content : center;
-    overflow-wrap: break-word;
-    }
-    .subject{
-        height: 50px;
-        text-align: center;
-        width: 100%;
-    }
-    .subject h1{
-        color: orange;
-        font-size: 22px;
-        display: inline-block;
-        border-bottom: 4px solid;
-        padding-bottom: 10px;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        
-      }
-
-    .box{
-        display: flex;
-        flex-direction: column;
-        transition: box-shadow 0.25s ease-in 0s, transform 0.25s ease-in 0s;
-        margin: 1rem;
-        overflow: hidden;
-        box-shadow: rgba(0, 0, 0, 0.08) 0px 12px 20px 0px;
-        border-radius: 4px;
-        background: white;
-        width: 17rem;
-        height: 22.5rem;
-    }
-    .img-box img:hover {
-        transform: scale(1.12);
-        transition: transform .35s;
-        
-    }
-    .img-box {
-        width: 100%;
-        position: relative;
-        padding-top:92%;
-        overflow: hidden;
-    }
-    
-    .img-box img {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        width: 100%;
-        height: 100%;
-        display: block;
-    }
-    
-    .user {
-        padding: 4px 10px;
-        border-top: 1px solid rgb(248, 249, 250);
-        display: flex;
-        font-size: 0.75rem;
-        line-height: 1.5;
-        justify-content: space-between;
-    }
-    .user .userinfo {
-        text-decoration: none;
-        color: inherit;
-        display: flex;
-        align-items: center;
-    }
-    .user .userinfo img {
-        object-fit: cover;
-        border-radius: 50%;
-        width: 1.5rem;
-        height: 1.5rem;
-        display: block;
-        margin-right: 0.5rem;
-    }
-    .diary-content h4{
-        text-align: center;
-        margin: 17px 1px;
-    }
-    .detail{
-        margin-left: 60px;
-
-    }
-    .button {
-        display: inline-block;
-    
-        border: 2px solid #ffa726;
-        border-radius: 15px;
-        color: #ffa726;
-        padding: 5px 40px;
-        text-decoration: none;
-        transition: background-color 200ms ease-in-out;
-    
-      }
-      .button:hover, .button:focus{
-        background-color: #ffa726;
-        color: white;
-      }
-      .big{
-        padding: 10px 50px;
-        margin-top: 28px;
-      }
-    .add{
-        position: relative;
-        top: 30px;
-        left: 350px;
-    } 
+    text-align: center;
+   }
+   .inner-width{
+     max-width: 1200px;
+     margin: auto;
+     padding: 40px;
+     color: #333;
+     overflow: hidden;
+   }
+   .mypet-section h1{
+     font-size: 20px;
+     display: inline-block;
+     border-bottom: 4px solid;
+     padding-bottom: 10px;
+   }
+   .pet{
+     float: left;
+     width: calc(85% / 3);
+     overflow: hidden;
+     padding: 30px 0;
+     transition: 0.4s;
+     border: 1px solid #ddd;
+     border-radius: 15px;
+     margin: 50px 20px;
+ 
+ 
+   }
+   .pet:hover{
+     background: #ddd;
+   }
+   .pet img{
+     width: 200px;
+     height: 200px;
+   }
+   .p-name{
+     margin: 16px 0;
+   }
+   .p-sm{
+     margin-top: 12px;
+   }
+ 
+   .button {
+     display: inline-block;
+ 
+     border: 2px solid #ffa726;
+     border-radius: 15px;
+     color: #ffa726;
+     padding: 5px 50px;
+     text-decoration: none;
+     transition: background-color 200ms ease-in-out;
+ 
+   }
+   .button:hover, .button:focus{
+     background-color: #ffa726;
+     color: white;
+   }
+   .big{
+     padding: 10px 50px;
+     margin-top: 28px;
+   }
+ 
