@@ -1,3 +1,5 @@
+@import url(popup.css);
+
 html{
     height: 100%;
     margin: 0px;
@@ -21,7 +23,13 @@ ul,ol{
 .d-none{
     display: none !important;
 }
-.flex{
+.flex,
+.dog-breed-gender ul,
+.container,
+.box,
+.user,
+.user .userinfo,
+.profile-box{
     display: flex;
 }
 .align-center{
@@ -32,8 +40,8 @@ ul,ol{
     --shadow : 0 1px 2px rgba(0,0,0,0.05),0 1px 4px rgba(0,0,0,0.05),0 2px 8px rgba(0,0,0,0.05);
 }
 /*-----------------*/
-.float-content{
-    max-width:1200px;
+header .float-content{
+    width:1200px;/*너비고정 max-width에서변경;*/
     margin-left: auto;
     margin-right: auto;
     height: 100%;
@@ -78,6 +86,7 @@ ul,ol{
         
         height: 100%;
         display: grid;  
+        width: 1200px;
         grid-template-columns: 200px 1fr;
         grid-template-rows: 1fr;
         grid-template-areas:
@@ -90,8 +99,7 @@ ul,ol{
     /* margin-top: 10PX;
     background-color: white;
     position: fixed;
-    width: 200px; */
-    
+    width: 200px; */    
 }
 #main{  
     grid-area: main;
@@ -147,7 +155,7 @@ ul,ol{
         justify-content: space-evenly;
         flex-wrap: nowrap;
     }
-    
+    .option span,  
     .main-menu>ul>li>a, .member-menu a{
         display: inline-block;
         color: #4B4B4B;   
@@ -157,6 +165,7 @@ ul,ol{
         padding: 0px 16px;
         }
 
+    .option span,    
     .main-menu>ul>li>a:hover{
         background-color: #eff0f1;
         color: black;
@@ -234,7 +243,7 @@ ul,ol{
         margin: 0;
     }
 } 
-/* ------------------------------------------------------------------- */
+/* ------------------main-------------------- */
 .fas,
 .far{
     line-height: 200%;
@@ -242,17 +251,16 @@ ul,ol{
 }
 #content{
     position: relative;
-    height: auto;
+    min-height: 700px;
 }
 .mypet-section{
-    height: auto;
+    min-height: 700px;
 }
 
 .container{
     position: relative;
     top: 10px;
     height: 80%;
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content : center;
@@ -275,9 +283,7 @@ ul,ol{
       }
 
     .box{
-        display: flex;
         flex-direction: column;
-        transition: box-shadow 0.25s ease-in 0s, transform 0.25s ease-in 0s;
         margin: 1rem;
         overflow: hidden;
         box-shadow: rgba(0, 0, 0, 0.08) 0px 12px 20px 0px;
@@ -285,13 +291,14 @@ ul,ol{
         background: white;
         width: 17rem;
         height: 22.5rem;
+
     }
-    .img-box img:hover {
+    .inner-section .img-box img:hover {
         transform: scale(1.15);
         transition: .4s ease;
 
     }
-    .img-box {
+    .box .img-box {
         width: 100%;
         position: relative;
         padding-top:92%;
@@ -305,12 +312,14 @@ ul,ol{
         width: 100%;
         height: 100%;
         display: block;
+
+        transform: scale(1);
+        transition: .3s;
     }
     
     .user {
         padding: 4px 10px;
         border-top: 1px solid rgb(248, 249, 250);
-        display: flex;
         font-size: 0.75rem;
         line-height: 1.5;
         justify-content: space-between;
@@ -318,7 +327,6 @@ ul,ol{
     .user .userinfo {
         text-decoration: none;
         color: inherit;
-        display: flex;
         align-items: center;
     }
     .user .userinfo img {
@@ -333,9 +341,9 @@ ul,ol{
         text-align: center;
         margin: 17px 1px;
     }
-    .detail{
-        margin-left: 60px;
-
+    .diary-content .detail-btn{
+        cursor: pointer;
+        margin-left: 25%;
     }
     .button {
         display: inline-block;
@@ -345,9 +353,10 @@ ul,ol{
         color: orange;
         padding: 5px 30px;
         text-decoration: none;
-        transition: background-color 200ms ease-in-out;
+        transition: 200ms ease-in-out;
     
       }
+    
       .button:hover, .button:focus{
         background-color: orange;
         color: white;
@@ -355,9 +364,20 @@ ul,ol{
       .big{
         padding: 10px 50px;
         margin-top: 28px;
+        cursor: pointer;
       }
     .add{
+        display: block;
         position: relative;
-        top: 30px;
-        left: 350px;
+        left: 35%;
     } 
+    .none-list img{
+        width: 300px;
+      }
+      .none-list p{
+        color: gray;
+        font-size: 15px;
+        text-align: center;
+        font-weight: bold;
+      }
+
